@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SubTracker - Privacy Policy & Terms</title>
+    <title>UPI Alerts — Privacy Policy &amp; Terms</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -75,213 +75,171 @@
         <a href="#terms">Terms of Service</a>
         <a href="#contact">Contact</a>
     </div>
-    
-    <h1 id="privacy">Privacy Policy - SubTracker Smart Reminders</h1>
-    <p class="date">Last Updated: August 2025</p>
-    
-    <h2>Introduction</h2>
-    <p>SubTracker Smart Reminders ("we", "our", "app") is committed to protecting your privacy. This Privacy Policy explains how we handle your information when you use our Android application.</p>
-    
-    <h2>Information We Don't Collect</h2>
-    <p>We want to be clear about what we DON'T do:</p>
+
+    <h1 id="privacy">Privacy Policy &mdash; UPI Alerts</h1>
+    <p class="date">Last Updated: September 2026</p>
+
+    <h2>The short version</h2>
+    <p>UPI Alerts reads the payment notifications your phone already shows you, records each
+    payment, reads it aloud, and lets you issue bills. <strong>Everything it records stays on
+    your phone.</strong> There is no account, no sign-in, and no server holding your
+    payments. We cannot see your transactions, because they are never sent to us.</p>
+
+    <h2>What we do not collect</h2>
     <ul>
-        <li>We DON'T collect personal information like names, emails, or phone numbers</li>
-        <li>We DON'T track your location</li>
-        <li>We DON'T sell or share your data with third parties</li>
-        <li>We DON'T use your data for advertising</li>
-        <li>We DON'T upload your SMS messages to any server</li>
+        <li>We do not collect, transmit or store your payment amounts, the names of people
+        who pay you, reference numbers, or the text of any notification.</li>
+        <li>We do not ask for your name, email address, phone number or date of birth.</li>
+        <li>There is no user account. Nothing to register, nothing to sign in to.</li>
+        <li>We do not sell, rent or share any data with anyone. There is no data to sell.</li>
+        <li>We show no advertisements and do not request an advertising identifier.</li>
+        <li>We do not track you across other apps or websites.</li>
     </ul>
-    
-    <h2>Information Stored Locally</h2>
-    <p>All your subscription data is stored locally on your device:</p>
+
+    <h2>Notification access, and why the app asks for it</h2>
+    <p>Reading payment notifications is the app's entire purpose. Android grants this through
+    <em>notification access</em>, which you turn on yourself and can turn off at any time in
+    your phone's Settings.</p>
     <ul>
-        <li>Subscription names and amounts</li>
-        <li>Payment due dates and frequencies</li>
-        <li>Notes and categories</li>
-        <li>Reminder preferences</li>
+        <li><strong>What is read:</strong> payment notifications from UPI apps, bank apps and
+        your messaging app &mdash; the amount, who paid or was paid, and the reference
+        number.</li>
+        <li><strong>Bank alerts arrive as text messages</strong>, so the notification your
+        messaging app displays is read too. This happens only when the notification is a
+        payment.</li>
+        <li><strong>One-time passwords and security codes are discarded.</strong> They are
+        never stored, never shown in your records, and never read aloud. The app detects and
+        rejects them before anything is saved.</li>
+        <li><strong>Everything else is discarded.</strong> Android delivers every notification
+        to any app with this permission; UPI Alerts keeps only payments and immediately
+        drops the rest without storing them.</li>
+        <li><strong>The app does not hold SMS permission.</strong> It has no access to your
+        messages, your message history, or your contacts. It reads only the notification that
+        another app chose to display.</li>
     </ul>
-    <p>This data never leaves your device unless you explicitly choose to back it up.</p>
-    
-    <h2>Optional Permissions</h2>
-    
-    <h3>SMS Access (Optional - Currently Disabled)</h3>
+
+    <h2>What is stored, and where</h2>
+    <p>All of it is stored in the app's private storage on your device:</p>
     <ul>
-        <li><strong>Status</strong>: Disabled in version 1.0 for Play Store compliance</li>
-        <li><strong>Future Purpose</strong>: Auto-detect subscriptions from payment messages</li>
-        <li><strong>Usage</strong>: When enabled, messages will be scanned locally on your device</li>
-        <li><strong>Storage</strong>: We don't store your messages</li>
+        <li>Payments captured from notifications: amount, direction, counterparty name,
+        reference number, time, and which app reported it.</li>
+        <li>Bills and receipts you create, including any customer name or phone number
+        <em>you</em> type, and the items you sell.</li>
+        <li>Your shop details, if you enter them, and your app settings.</li>
     </ul>
-    
-    <h3>Notifications (Optional)</h3>
+    <p><strong>Your payments are deliberately excluded from Google backup.</strong> Most apps
+    upload their data to your Google Drive automatically; UPI Alerts switches that off for
+    your payment records, so your takings are not copied to any cloud service. Your records
+    do transfer directly to a new phone if you use Android's phone-to-phone transfer, because
+    that is a local copy that never reaches a server.</p>
+    <p>One consequence is worth stating plainly: if you factory-reset your phone or uninstall
+    the app without exporting first, your records are gone and we cannot recover them, because
+    we never had them. Use <em>Settings &rarr; Export data</em> to keep your own copy.</p>
+
+    <h2>What does leave your phone</h2>
+    <p>Two things, neither of which contains payment information:</p>
     <ul>
-        <li><strong>Purpose</strong>: Send payment reminder notifications</li>
-        <li><strong>Usage</strong>: Local notifications only, no push notifications</li>
-        <li><strong>Requirement</strong>: You can use the app without notifications</li>
+        <li><strong>Crash reports</strong> (Firebase Crashlytics). If the app crashes, a
+        technical report is sent so the fault can be fixed. It contains no amounts, no names
+        and no notification text.</li>
+        <li><strong>Anonymous usage counts</strong> (Firebase Analytics). Which screens are
+        opened and how often the app runs, tied to a random identifier rather than to you.
+        This is used to find where the app is confusing or broken. It contains no payment
+        information and no advertising identifier.</li>
     </ul>
-    
-    <h3>Exact Alarm Permission</h3>
+    <p>Firebase is operated by Google; their handling of this diagnostic data is governed by
+    the <a href="https://firebase.google.com/support/privacy">Firebase Privacy Policy</a>.</p>
+
+    <h2>Other permissions</h2>
     <ul>
-        <li><strong>Purpose</strong>: Schedule precise reminder notifications</li>
-        <li><strong>Usage</strong>: Ensures reminders work reliably even in battery saving mode</li>
-        <li><strong>Requirement</strong>: Recommended for reliable reminders</li>
+        <li><strong>Notifications</strong> &mdash; to show you a payment alert.</li>
+        <li><strong>Ignore battery optimisation</strong> (optional) &mdash; Android otherwise
+        delays background apps, which would make a spoken payment alert arrive late or not at
+        all. Payments are still recorded without it.</li>
+        <li><strong>Foreground service / media playback</strong> &mdash; recent Android
+        versions mute audio started by a background app, so the spoken alert is played from a
+        short-lived foreground service. It is used only to speak, never to record audio.</li>
+        <li><strong>Internet</strong> &mdash; used only for crash reports and anonymous usage
+        counts. The app captures and records payments with no internet connection at all.</li>
+        <li><strong>No microphone, no camera, no contacts, no location, no SMS.</strong></li>
     </ul>
-    
-    <h2>Third-Party Services</h2>
-    
-    <h3>Firebase Crashlytics</h3>
-    <p>We use Firebase Crashlytics to:</p>
+
+    <h2>Your control</h2>
     <ul>
-        <li>Identify and fix app crashes</li>
-        <li>Improve app stability</li>
-        <li>Monitor app performance</li>
+        <li>Turn notification access off at any time in your phone's Settings; the app stops
+        reading anything immediately.</li>
+        <li>Correct or delete any individual payment record from within the app.</li>
+        <li>Export everything as CSV, Excel or a backup file, at any time, free.</li>
+        <li>Delete everything with <em>Settings &rarr; Clear All Data</em>.</li>
+        <li>Uninstalling the app deletes everything it has stored.</li>
     </ul>
-    <p>Data collected by Crashlytics:</p>
-    <ul>
-        <li>Crash stack traces</li>
-        <li>Device model and OS version</li>
-        <li>App version</li>
-        <li>Installation UUID (not linked to you personally)</li>
-    </ul>
-    <p>You can opt-out of crash reporting in the app settings.</p>
-    
-    <h3>Google Drive Backup (Optional)</h3>
-    <ul>
-        <li>Only activated if you choose to backup</li>
-        <li>Your data is encrypted before upload</li>
-        <li>Stored in your personal Google Drive</li>
-        <li>We cannot access your backed-up data</li>
-    </ul>
-    
-    <h2>Data Security</h2>
-    <p>We implement security measures including:</p>
-    <ul>
-        <li>Local data encryption</li>
-        <li>No data transmission by default</li>
-        <li>Secure coding practices</li>
-        <li>Regular security updates</li>
-    </ul>
-    
-    <h2>Your Rights</h2>
-    <p>You have the right to:</p>
-    <ul>
-        <li>Access all your data (visible in the app)</li>
-        <li>Delete all your data (Settings > Clear All Data)</li>
-        <li>Export your data (Settings > Export Data)</li>
-        <li>Opt-out of crash reporting</li>
-        <li>Use the app without optional permissions</li>
-    </ul>
-    
-    <h2>Children's Privacy</h2>
-    <p>Our app is suitable for all ages. We don't knowingly collect personal information from children under 13.</p>
-    
-    <h2>Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last Updated" date.</p>
-    
-    <h2 id="contact">Contact Us</h2>
-    <div class="contact">
-        <p>If you have questions about this Privacy Policy, please contact us:</p>
-        <ul>
-            <li>GitHub Issues: <a href="https://github.com/[mauryaabhishek33]/subtracker/issues">https://github.com/[mauryaabhishek33]/subtracker/issues</a></li>
-            <li>Email: [supportsubtracker@gmail.com]</li>
-        </ul>
-    </div>
-    
-    <h2>Consent</h2>
-    <p>By using SubTracker Smart Reminders, you agree to this Privacy Policy.</p>
-    
-    <hr style="margin: 50px 0;">
-    
+
+    <h2>Children</h2>
+    <p>UPI Alerts is a business and personal finance tool intended for adults. It is not
+    directed at children under 13, and we knowingly collect nothing from them &mdash; as
+    above, we collect no personal information from anyone.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes materially, the updated version will be published here with a
+    new date, and material changes affecting what the app reads or stores will be shown in
+    the app.</p>
+
     <h1 id="terms">Terms of Service</h1>
-    <p class="date">Last Updated: December 2024</p>
-    
-    <h2>1. Acceptance of Terms</h2>
-    <p>By downloading, installing, or using SubTracker Smart Reminders ("the App"), you agree to these Terms of Service.</p>
-    
-    <h2>2. Description of Service</h2>
-    <p>SubTracker Smart Reminders is a subscription tracking and reminder application that:</p>
-    <ul>
-        <li>Helps you track subscription payments</li>
-        <li>Sends local reminder notifications</li>
-        <li>Stores all data locally on your device</li>
-        <li>Optionally backs up data to Google Drive</li>
-    </ul>
-    
-    <h2>3. User Responsibilities</h2>
-    <p>You agree to:</p>
-    <ul>
-        <li>Use the app only for lawful purposes</li>
-        <li>Not reverse engineer or modify the app</li>
-        <li>Not use the app to violate others' rights</li>
-        <li>Keep your device secure</li>
-    </ul>
-    
-    <h2>4. Privacy and Data</h2>
-    <ul>
-        <li>Your data is stored locally on your device</li>
-        <li>We don't collect personal information</li>
-        <li>Optional features may require additional permissions</li>
-        <li>See our Privacy Policy for details</li>
-    </ul>
-    
-    <h2>5. Intellectual Property</h2>
-    <ul>
-        <li>The app and its content are our intellectual property</li>
-        <li>You may not copy, modify, or distribute the app without permission</li>
-        <li>Your subscription data remains yours</li>
-    </ul>
-    
-    <h2>6. Disclaimers</h2>
-    <p>THE APP IS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND. WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING:</p>
-    <ul>
-        <li>Fitness for a particular purpose</li>
-        <li>Accuracy of reminder notifications</li>
-        <li>Prevention of missed payments</li>
-        <li>Data backup reliability</li>
-    </ul>
-    
-    <h2>7. Limitation of Liability</h2>
-    <p>We are not liable for:</p>
-    <ul>
-        <li>Missed subscription payments</li>
-        <li>Data loss on your device</li>
-        <li>Service interruptions</li>
-        <li>Any indirect or consequential damages</li>
-    </ul>
-    
-    <h2>8. Indemnification</h2>
-    <p>You agree to indemnify us from any claims arising from:</p>
-    <ul>
-        <li>Your use of the app</li>
-        <li>Violation of these terms</li>
-        <li>Violation of any rights of another party</li>
-    </ul>
-    
-    <h2>9. Modifications</h2>
-    <p>We reserve the right to:</p>
-    <ul>
-        <li>Modify these terms at any time</li>
-        <li>Update or discontinue the app</li>
-        <li>Change features or functionality</li>
-    </ul>
-    
-    <h2>10. Termination</h2>
-    <p>We may terminate your access to the app if you violate these terms. You may stop using the app at any time.</p>
-    
-    <h2>11. Governing Law</h2>
-    <p>These terms are governed by the laws of [India/Uttar Pradesh], without regard to conflict of law principles.</p>
-    
-    <h2>12. Contact Information</h2>
+    <p class="date">Last Updated: September 2026</p>
+
+    <h2>1. What this app does</h2>
+    <p>UPI Alerts records payments by reading notifications on your device, announces them
+    aloud, and generates bills and receipts as PDF files. It is a record-keeping and
+    notification tool. <strong>It is not a payment application</strong>: it cannot send,
+    receive, hold or move money, and it is not affiliated with NPCI, UPI, Google Pay, PhonePe,
+    Paytm, Amazon Pay, or any bank.</p>
+
+    <h2>2. Accuracy, and what you must not rely on</h2>
+    <p>The app reads notifications written by other companies, whose wording changes without
+    notice. It may occasionally miss a payment, record one twice, or read a detail wrongly.
+    <strong>Do not treat it as proof that money has arrived.</strong> Confirm the payment in
+    your bank or UPI app before handing over goods. Records are provided for your own
+    convenience and are not a substitute for your bank statement.</p>
+
+    <h2>3. Bills, invoices and tax</h2>
+    <p>The app can produce GST tax invoices and plain receipts from details you enter. You are
+    responsible for the accuracy of those details, for holding a valid GST registration before
+    issuing a tax invoice, and for your own tax compliance. Charging tax without being
+    registered is an offence under Section 32 of the CGST Act. We provide a document template
+    and arithmetic; we do not provide tax, legal or accounting advice.</p>
+
+    <h2>4. Your records are your responsibility</h2>
+    <p>Your data is stored only on your device and is deliberately kept out of cloud backup.
+    We hold no copy and cannot restore anything. Export your records regularly if they matter
+    to you.</p>
+
+    <h2>5. Acceptable use</h2>
+    <p>Use the app only on a device you own or are authorised to use, and only for your own
+    payments or those of a business you operate. Do not use it to monitor another person's
+    notifications without their knowledge and consent.</p>
+
+    <h2>6. Disclaimer and limitation of liability</h2>
+    <p>The app is provided "as is", without warranty of any kind. To the maximum extent
+    permitted by law, we are not liable for any loss of money, data, profit or business
+    arising from use of the app, from a payment it failed to record, from a payment it
+    recorded incorrectly, or from a document it produced.</p>
+
+    <h2>7. Changes and termination</h2>
+    <p>Features may change or be withdrawn. You may stop using the app at any time by
+    uninstalling it.</p>
+
+    <h2>8. Governing law</h2>
+    <p>These terms are governed by the laws of India, and the courts of India have exclusive
+    jurisdiction.</p>
+
+    <h2 id="contact">Contact</h2>
     <div class="contact">
-        <p>For questions about these terms:</p>
+        <p>Questions about this policy, or about what the app stores:</p>
         <ul>
-            <li>GitHub Issues: <a href="https://github.com/[mauryaabhishek33]/subtracker/issues">https://github.com/[mauryaabhishek33]/subtracker/issues</a></li>
-            <li>Email: [supportsubtracker@gmail.com]</li>
+            <li>Email: supportsubtracker@gmail.com</li>
         </ul>
+        <p>Because your records never leave your device, we cannot look up, recover or delete
+        your data for you &mdash; those controls are all inside the app.</p>
     </div>
-    
-    <h2>13. Entire Agreement</h2>
-    <p>These Terms constitute the entire agreement between you and us regarding the use of SubTracker Smart Reminders.</p>
-    
-    <p><strong>By using the app, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.</strong></p>
 </body>
 </html>
