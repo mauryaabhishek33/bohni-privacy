@@ -77,7 +77,7 @@
     </div>
 
     <h1 id="privacy">Privacy Policy &mdash; UPI Alerts</h1>
-    <p class="date">Last Updated: September 2026</p>
+    <p class="date">Last Updated: 24 September 2026</p>
 
     <h2>The short version</h2>
     <p>UPI Alerts reads the payment notifications your phone already shows you, records each
@@ -101,21 +101,42 @@
     <em>notification access</em>, which you turn on yourself and can turn off at any time in
     your phone's Settings.</p>
     <ul>
-        <li><strong>What is read:</strong> payment notifications from UPI apps, bank apps and
-        your messaging app &mdash; the amount, who paid or was paid, and the reference
-        number.</li>
-        <li><strong>Bank alerts arrive as text messages</strong>, so the notification your
-        messaging app displays is read too. This happens only when the notification is a
-        payment.</li>
+        <li><strong>What is read:</strong> payment notifications from UPI apps and bank apps
+        &mdash; the amount, who paid or was paid, and the reference number.</li>
         <li><strong>One-time passwords and security codes are discarded.</strong> They are
         never stored, never shown in your records, and never read aloud. The app detects and
         rejects them before anything is saved.</li>
         <li><strong>Everything else is discarded.</strong> Android delivers every notification
-        to any app with this permission; UPI Alerts keeps only payments and immediately
-        drops the rest without storing them.</li>
-        <li><strong>The app does not hold SMS permission.</strong> It has no access to your
-        messages, your message history, or your contacts. It reads only the notification that
-        another app chose to display.</li>
+        to any app with this permission; UPI Alerts keeps only payments and drops the rest
+        without storing them. The one exception is the same as for messages below: something
+        that looks like a payment but cannot be read is kept on your phone for up to 30 days
+        so the fault can be fixed, and is then deleted automatically.</li>
+    </ul>
+
+    <h2>Bank text messages</h2>
+    <p>Many payments produce no notification from any app &mdash; a card payment, an ATM
+    withdrawal, a bank transfer, a salary credit. For those, the text message your bank sends
+    is the only record your phone receives. The app asks for permission to receive incoming
+    messages so that those payments reach your records too.</p>
+    <ul>
+        <li><strong>It is optional.</strong> You can refuse, and the app works: it simply
+        records fewer payments, and tells you so. Nothing is disabled.</li>
+        <li><strong>Only new messages, as they arrive.</strong> The app holds
+        <code>RECEIVE_SMS</code> and not <code>READ_SMS</code>, which is a real difference:
+        it <em>cannot</em> open your message history, and cannot see a single message that
+        arrived before you gave permission.</li>
+        <li><strong>Only payments are kept.</strong> The amount, who paid or was paid, and the
+        reference number are extracted on your phone, and the message itself is then
+        discarded &mdash; except in the one case described below.</li>
+        <li><strong>One-time passwords and security codes are detected and rejected</strong>
+        before anything is saved. They are never stored, never shown and never read aloud.</li>
+        <li>Every other message is discarded without being stored, and none of it is ever
+        sent anywhere.</li>
+        <li><strong>One exception, stated plainly:</strong> if a message looks like a payment
+        but the app cannot read it, the text is kept on your phone for up to 30 days so the
+        fault can be found and fixed, then deleted automatically. It is never sent anywhere,
+        and <em>Settings &rarr; Clear All Data</em> removes it immediately.</li>
+        <li>You can revoke this at any time in your phone's Settings.</li>
     </ul>
 
     <h2>What is stored, and where</h2>
@@ -147,8 +168,27 @@
         This is used to find where the app is confusing or broken. It contains no payment
         information and no advertising identifier.</li>
     </ul>
+    <p><strong>Both can be switched off</strong> in <em>Settings &rarr; Data &amp; privacy</em>.
+    Turning them off stops the collection itself, not merely the sending of it.</p>
     <p>Firebase is operated by Google; their handling of this diagnostic data is governed by
     the <a href="https://firebase.google.com/support/privacy">Firebase Privacy Policy</a>.</p>
+
+    <h2>Payment for the app</h2>
+    <p>Recording payments is free, and stays free. A subscription is what reads payments aloud
+    and lets you share bills as PDFs.</p>
+    <ul>
+        <li>New shops get <strong>30 days free</strong>. It needs no card and no payment
+        details &mdash; nothing is entered until you decide to pay.</li>
+        <li>After that: <strong>&#8377;29 a month</strong>, or pay once for three months, six
+        months or a year at a lower rate. A pass can be paid for with a Google Play gift card
+        bought for cash, so you do not need a card or a bank-linked account.</li>
+        <li>If you are tracking your own money rather than running a shop, the app is
+        <strong>free forever</strong> and there is nothing to buy.</li>
+        <li><strong>Your records are never held hostage.</strong> Payments go on being
+        recorded whatever you pay or do not pay, and export is free in every case.</li>
+        <li>Purchases are processed by Google Play. We receive no card details and store no
+        payment method; the app keeps only whether a subscription is currently active.</li>
+    </ul>
 
     <h2>Other permissions</h2>
     <ul>
@@ -156,12 +196,19 @@
         <li><strong>Ignore battery optimisation</strong> (optional) &mdash; Android otherwise
         delays background apps, which would make a spoken payment alert arrive late or not at
         all. Payments are still recorded without it.</li>
+        <li><strong>Text-to-speech</strong> &mdash; payments are read aloud using the speech
+        engine already on your phone, in English, Hindi or one of ten other Indian languages.
+        The sentence is built and spoken on the device; nothing is sent anywhere to say it.</li>
         <li><strong>Foreground service / media playback</strong> &mdash; recent Android
         versions mute audio started by a background app, so the spoken alert is played from a
         short-lived foreground service. It is used only to speak, never to record audio.</li>
         <li><strong>Internet</strong> &mdash; used only for crash reports and anonymous usage
         counts. The app captures and records payments with no internet connection at all.</li>
-        <li><strong>No microphone, no camera, no contacts, no location, no SMS.</strong></li>
+        <li><strong>Receive SMS</strong> (optional) &mdash; to read bank payment alerts as they
+        arrive, as described above. Not your message history, which the app cannot open.</li>
+        <li><strong>Billing</strong> &mdash; so a subscription can be bought through Google
+        Play. Payment is handled entirely by Google; the app never sees a card number.</li>
+        <li><strong>No microphone, no camera, no contacts, no location.</strong></li>
     </ul>
 
     <h2>Your control</h2>
@@ -185,7 +232,7 @@
     the app.</p>
 
     <h1 id="terms">Terms of Service</h1>
-    <p class="date">Last Updated: September 2026</p>
+    <p class="date">Last Updated: 24 September 2026</p>
 
     <h2>1. What this app does</h2>
     <p>UPI Alerts records payments by reading notifications on your device, announces them
